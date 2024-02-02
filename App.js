@@ -1,11 +1,13 @@
 import TabNavigator from './navigation/TabNavigator'
 import DrawerNavigator from './navigation/DrawerNavigator';
+import { StyleSheet, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <TabNavigator/>
-    </View>
+    <NavigationContainer>
+      <DrawerNavigator/>
+    </NavigationContainer>
   );
 }
 
